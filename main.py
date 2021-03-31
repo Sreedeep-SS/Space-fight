@@ -20,8 +20,10 @@ MAX = 3
 
 BORDER = pygame.Rect(445 , 0 , 10 , 500)
 
-BULLET_FIRE_SOUND=pygame.mixer.Sound("F:\Python\Pycharm\Projects\learnpygame\Assets\Gun+Silencer.mp3")
-BULLET_HIT_SOUND=pygame.mixer.Sound("F:\Python\Pycharm\Projects\learnpygame\Assets\Grenade+1.mp3")
+BULLET_FIRE_SOUND=pygame.mixer.Sound(#include gun silencer mp3 path
+)
+BULLET_HIT_SOUND=pygame.mixer.Sound(#include grenade mp3 path
+)
 
 HEALTH_FONT = pygame.font.SysFont("comicsans", 40)
 WINNER_FONT = pygame.font.SysFont("comicsans", 100)
@@ -29,13 +31,16 @@ WINNER_FONT = pygame.font.SysFont("comicsans", 100)
 YELLOW_HIT = pygame.USEREVENT + 1
 RED_HIT = pygame.USEREVENT + 2
 
-SPACE = pygame.image.load("F:\Python\Pycharm\Projects\learnpygame\Assets\space.png")
+SPACE = pygame.image.load(#include space png file path
+)
 SPACE = pygame.transform.scale(SPACE, (WIDTH,HEIGHT))
-Yellow_boi = pygame.image.load("F:\Python\Pycharm\Projects\learnpygame\Assets\spaceship_yellow.png")
+Yellow_boi = pygame.image.load(#include yellow ship png file path
+)
 Yellow_boi = pygame.transform.scale(Yellow_boi, (55,45))
 Yellow_boi = pygame.transform.rotate(Yellow_boi, 90)
 
-Red_boi = pygame.image.load("F:\Python\Pycharm\Projects\learnpygame\Assets\spaceship_red.png")
+Red_boi = pygame.image.load(#include red ship png file path
+)
 Red_boi = pygame.transform.scale(Red_boi, (55,45))
 Red_boi = pygame.transform.rotate(Red_boi, 270)
 
